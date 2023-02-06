@@ -29,6 +29,10 @@
 .buttonsContainer {
 	margin-bottom: 20px;
 }
+.pages {
+	background-color: #f8dfdf;
+	height: 150%;
+}
 
 @media (min-width: 600px) {
 	.carrousel {
