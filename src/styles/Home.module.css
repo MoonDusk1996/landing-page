@@ -1,0 +1,44 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.features {
+	display: flex;
+	flex-direction: column;
+	background-color: #f8dfdf;
+}
+.feature {
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	padding: 15px;
+}
+.featureDescription {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+}
+
+.buttonsContainer > button {
+	width: 90%;
+	margin: 5px auto;
+}
+.buttonsContainer {
+	margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+	.carrousel {
+		max-width: 50%;
+	}
+	.features {
+		display: flex;
+		flex-direction: row;
+	}
+	.buttonsContainer > button {
+		width: 100%;
+	}
+}
