@@ -1,24 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head"
-import styles from "@/styles/Home.module.css"
-import { Button, Typography } from "@mui/material"
-import FavoriteIcon from "@mui/icons-material/Favorite"
-import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism"
-import LoyaltyIcon from "@mui/icons-material/Loyalty"
 import Link from "next/link"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
+import styles from "@/styles/Home.module.css"
+
 import { Carousel } from "react-responsive-carousel"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+
+import { Button, IconButton } from "@mui/material"
+import LoyaltyIcon from "@mui/icons-material/Loyalty"
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism"
+import FavoriteIcon from "@mui/icons-material/Favorite"
 import FacebookIcon from "@mui/icons-material/Facebook"
 import InstagramIcon from "@mui/icons-material/Instagram"
-import { IconButton } from "@mui/material"
 
 export default function Home() {
-	function handleFacebook() {
-		window.location.href =
-			"https://web.facebook.com/profile.php?id=100089373436308"
-	}
-	function handleInstagram() {
-		window.location.href = "https://www.instagram.com/anapapel.personalizados/"
-	}
 	return (
 		<>
 			<Head>
@@ -32,7 +27,7 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<header>
-					<Carousel showThumbs={false}>
+					<Carousel className={styles.carroucel} showThumbs={false}>
 						<div>
 							<img src="/card_pen.jpg" alt="Card com balas e lápis" />
 							<p className="legend">Card com balas e lápis</p>
@@ -50,8 +45,33 @@ export default function Home() {
 							<p className="legend">Canecas personalizadas</p>
 						</div>
 					</Carousel>
-					<h1>Presentes e brindes com a sua personalidade</h1>
+					<h1>Presentes com a sua personalidade</h1>
 				</header>
+
+				<section className={styles.store}>
+					<h2>Sem burocracia, tudo 100% online</h2>
+					<div className={styles.buttonsContainer}>
+						<Button
+							disableElevation
+							disabled
+							fullWidth
+							color="secondary"
+							variant="contained">
+							<Link target="_blank" href="https://wa.me/c/559284580339">
+								Loja online (Em breve)
+							</Link>
+						</Button>
+						<Button
+							disableElevation
+							fullWidth
+							color="secondary"
+							variant="contained">
+							<Link target="_blank" href="https://wa.me/message/V623RY5K4SCIM1">
+								Suporte
+							</Link>
+						</Button>
+					</div>
+				</section>
 				<section className={styles.features}>
 					<div className={styles.feature}>
 						<FavoriteIcon
@@ -111,41 +131,6 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className={styles.contact}>
-					<h2>Sem burocracia, tudo 100% online</h2>
-					<div className={styles.buttonsContainer}>
-						<Button
-							disableElevation
-							disabled
-							fullWidth
-							color="secondary"
-							variant="contained">
-							<Link target="_blank" href="https://wa.me/c/559284580339">
-								Loja online (Em breve)
-							</Link>
-						</Button>
-						<Button
-							disableElevation
-							fullWidth
-							color="secondary"
-							variant="contained">
-							<Link target="_blank" href="https://wa.me/message/V623RY5K4SCIM1">
-								Suporte
-							</Link>
-						</Button>
-						<Button
-							disableElevation
-							fullWidth
-							color="secondary"
-							variant="contained">
-							<Link
-								target="_blank"
-								href="https://instagram.com/anapapel.personalizados">
-								Instagram
-							</Link>
-						</Button>
-					</div>
-				</section>
 				<section className={styles.pages}>
 					<div>
 						<h2>Siga nossas páginas</h2>
