@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head"
-import Link from "next/link"
 import styles from "@/styles/Home.module.css"
 
 import { Carousel } from "react-responsive-carousel"
@@ -52,15 +51,14 @@ export default function Home() {
 								<Button
 									disableElevation
 									fullWidth
-									disabled
 									color="secondary"
 									variant="contained"
 									target="_blank"
 									href="https://wa.me/c/559284580339">
-									Loja online (Em breve)
+									Loja online
 								</Button>
 							</div>
-							<div>
+							<div className={styles.buttons}>
 								<Button
 									disableElevation
 									fullWidth
@@ -78,7 +76,9 @@ export default function Home() {
 				<section className={styles.features}>
 					<div className={styles.feature}>
 						<h3>
-							<FavoriteIcon />
+							<div className={styles.icon}>
+								<FavoriteIcon />
+							</div>
 							Presentei quem você ama
 						</h3>
 						<span>
@@ -91,8 +91,10 @@ export default function Home() {
 					</div>
 					<div className={styles.feature}>
 						<h3>
-							<LoyaltyIcon />
-							Fidelize clientes
+							<div className={styles.icon}>
+								<LoyaltyIcon />
+							</div>
+							Fidelize seus clientes
 						</h3>
 						<span>
 							Fidelizar clientes é fundamental para ter um negocio de sucesso,
@@ -102,15 +104,16 @@ export default function Home() {
 					</div>
 					<div className={styles.feature}>
 						<h3>
-							<VolunteerActivismIcon />
+							<div className={styles.icon}>
+								<VolunteerActivismIcon />
+							</div>
 							Conquiste seus funcionários
 						</h3>
 						<span>
 							Fidelizar funcionários aumenta a satisfação, motivação e lealdade
 							deles, o que resulta em melhor desempenho, menos rotatividade e
-							menores custos de recrutamento e treinamento. Além disso,
-							funcionários felizes e engajados tendem a oferecer um atendimento
-							mais positivo aos clientes, melhorando a imagem da empresa.
+							menores custos de recrutamento e treinamento e brindes com a cara
+							da sua empresa podem ser muito bem associados.
 						</span>
 					</div>
 				</section>

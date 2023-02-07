@@ -1,3 +1,12 @@
+@keyframes example {
+	from {
+		transform: translateY(1px);
+	}
+	to {
+		transform: translateY(-5px);
+	}
+}
+
 .main {
 	display: grid;
 	grid-template-areas:
@@ -10,7 +19,10 @@
 	width: 95%;
 	margin: 0 auto;
 }
-.header {
+.carroucel {
+	margin: 0 auto;
+}
+.header h1 {
 	grid-area: header;
 }
 .store {
@@ -31,6 +43,10 @@
 	color: #e88f9e;
 	display: grid;
 	grid-template-columns: 30px auto;
+}
+.icon {
+	animation: ease-in-out 3s infinite alternate;
+	animation-name: example;
 }
 
 .pages {
