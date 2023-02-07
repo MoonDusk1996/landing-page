@@ -26,7 +26,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.jpg" />
 			</Head>
 			<main className={styles.main}>
-				<header>
+				<header className={styles.header}>
 					<Carousel className={styles.carroucel} showThumbs={false}>
 						<div>
 							<img src="/card_pen.jpg" alt="Card com balas e lápis" />
@@ -45,89 +45,73 @@ export default function Home() {
 							<p className="legend">Canecas personalizadas</p>
 						</div>
 					</Carousel>
-					<h1>Presentes com a sua personalidade</h1>
+					<h1>Presentes, brindes e mimos com personalidade</h1>
+					<section className={styles.store}>
+						<div className={styles.buttonsContainer}>
+							<div className={styles.buttons}>
+								<Button
+									disableElevation
+									fullWidth
+									disabled
+									color="secondary"
+									variant="contained"
+									target="_blank"
+									href="https://wa.me/c/559284580339">
+									Loja online (Em breve)
+								</Button>
+							</div>
+							<div>
+								<Button
+									disableElevation
+									fullWidth
+									color="primary"
+									variant="contained"
+									target="_blank"
+									href="https://wa.me/message/V623RY5K4SCIM1">
+									Atendimento
+								</Button>
+							</div>
+						</div>
+					</section>
 				</header>
 
-				<section className={styles.store}>
-					<h2>Sem burocracia, tudo 100% online</h2>
-					<div className={styles.buttonsContainer}>
-						<Button
-							disableElevation
-							disabled
-							fullWidth
-							color="secondary"
-							variant="contained">
-							<Link target="_blank" href="https://wa.me/c/559284580339">
-								Loja online (Em breve)
-							</Link>
-						</Button>
-						<Button
-							disableElevation
-							fullWidth
-							color="secondary"
-							variant="contained">
-							<Link target="_blank" href="https://wa.me/message/V623RY5K4SCIM1">
-								Suporte
-							</Link>
-						</Button>
-					</div>
-				</section>
 				<section className={styles.features}>
 					<div className={styles.feature}>
-						<FavoriteIcon
-							style={{
-								color: "#e88f9e",
-								marginTop: "17px",
-								marginRight: "5px",
-							}}
-						/>
-						<div className={styles.featureDescription}>
-							<h3>Presentei quem você ama</h3>
-							<span>
-								Presentear aqueles que você ama é uma forma de demonstração de
-								amor, carinho, e fortalecimento dos laços emocionais. Isso pode
-								trazer felicidade e alegria tanto para quem dá quanto para quem
-								recebe o presente e nada como adicionar personalidade neste
-								gesto e ajudar a construir memórias positivas e duradouras.
-							</span>
-						</div>
+						<h3>
+							<FavoriteIcon />
+							Presentei quem você ama
+						</h3>
+						<span>
+							Presentear aqueles que você ama é uma forma de demonstração de
+							amor, carinho, e fortalecimento dos laços emocionais. Isso pode
+							trazer felicidade e alegria tanto para quem dá quanto para quem
+							recebe o presente e nada como adicionar personalidade neste gesto
+							e ajudar a construir memórias positivas e duradouras.
+						</span>
 					</div>
 					<div className={styles.feature}>
-						<LoyaltyIcon
-							style={{
-								color: "#e88f9e",
-								marginTop: "17px",
-								marginRight: "5px",
-							}}
-						/>
-						<div className={styles.featureDescription}>
-							<h3>Fidelize clientes</h3>
-							<span>
-								Fidelizar clientes é fundamental para ter um negocio de sucesso,
-								com isso você não só garante a satisfação do cliente como também
-								o faz ter um produto unico e especial com a cara do seu produto.
-							</span>
-						</div>
+						<h3>
+							<LoyaltyIcon />
+							Fidelize clientes
+						</h3>
+						<span>
+							Fidelizar clientes é fundamental para ter um negocio de sucesso,
+							com isso você não só garante a satisfação do cliente como também o
+							faz ter um produto unico e especial com a cara do seu produto.
+						</span>
 					</div>
 					<div className={styles.feature}>
-						<VolunteerActivismIcon
-							style={{
-								color: "#e88f9e",
-								marginTop: "17px",
-								marginRight: "5px",
-							}}
-						/>
-						<div className={styles.featureDescription}>
-							<h3>Conquiste seus funcionários</h3>
-							<span>
-								Fidelizar funcionários aumenta a satisfação, motivação e
-								lealdade deles, o que resulta em melhor desempenho, menos
-								rotatividade e menores custos de recrutamento e treinamento.
-								Além disso, funcionários felizes e engajados tendem a oferecer
-								um atendimento mais positivo aos clientes, melhorando a imagem
-								da empresa.
-							</span>
-						</div>
+						<h3>
+							<VolunteerActivismIcon />
+							Conquiste seus funcionários
+						</h3>
+						<span>
+							Fidelizar funcionários aumenta a satisfação, motivação e lealdade
+							deles, o que resulta em melhor desempenho, menos rotatividade e
+							menores custos de recrutamento e treinamento. Além disso,
+							funcionários felizes e engajados tendem a oferecer um atendimento
+							mais positivo aos clientes, melhorando a imagem da empresa.
+						</span>
 					</div>
 				</section>
 
@@ -158,13 +142,13 @@ export default function Home() {
 						/>
 					</IconButton>
 				</section>
+				<footer className={styles.footer}>
+					<span>
+						Copyright® Ana papel - brindes personalizados - 2020. Todos os
+						direitos reservados.
+					</span>
+				</footer>
 			</main>
-			<footer>
-				<span>
-					Copyright® Ana papel - brindes personalizados - 2020. Todos os
-					direitos reservados.
-				</span>
-			</footer>
 		</>
 	)
 }

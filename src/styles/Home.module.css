@@ -1,63 +1,75 @@
 .main {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+	display: grid;
+	grid-template-areas:
+		"header"
+		"store"
+		"features"
+		"pages"
+		"footer";
+	gap: 25px;
+	width: 95%;
+	margin: 0 auto;
+}
+.header {
+	grid-area: header;
 }
 .store {
-	background-color: #f8dfdf;
+	grid-area: store;
+}
+.buttons {
+	margin: 10px auto;
 }
 .features {
-	display: flex;
-	flex-direction: column;
-}
-.feature {
-	margin: 0 auto;
-	width: 90%;
-	display: flex;
-	flex-direction: row;
-	padding: 15px;
-}
-.featureDescription {
-	display: flex;
-	flex-direction: column;
+	grid-area: features;
+	background-color: #f8dfdf;
 	text-align: justify;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.features h3 {
+	color: #e88f9e;
+	display: grid;
+	grid-template-columns: 30px auto;
 }
 
-.buttonsContainer > button {
-	width: 90%;
-	margin: 5px auto;
-}
-.buttonsContainer {
-	margin-bottom: 20px;
-}
 .pages {
-	background-color: #f8dfdf;
-	height: 150%;
+	grid-area: pages;
+	width: 98%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.footer {
+	grid-area: footer;
 }
 
 @media (min-width: 600px) {
+	.main {
+		max-width: 1000px;
+		gap: 50px;
+	}
+	.header {
+		margin-top: 100px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "carroucel title" "carroucel store";
+		align-items: end;
+		gap: 25px;
+	}
 	.carroucel {
-		max-width: 40%;
+		grid-area: carroucel;
 	}
-	.features {
-		background-color: #f8dfdf;
-		flex-direction: row;
-		margin-bottom: 100px;
-		padding-top: 50px;
-		padding-bottom: 50px;
+	.header h1 {
+		grid-area: title;
+		height: 75px;
 	}
-	.body {
-		display: flex;
-		flex-direction: row-reverse;
+	.feature {
+		margin: 0 auto;
+		padding: 25px;
+		width: 75%;
+		font-size: large;
 	}
-	.store {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		background-color: #efd2d2;
-		position: relative;
-		top: -171px;
-		left: 17px;
+	.footer {
+		gap: 0px;
 	}
 }
