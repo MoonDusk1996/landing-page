@@ -2,8 +2,7 @@
 import Head from "next/head"
 import styles from "@/styles/Home.module.css"
 
-import { Carousel } from "react-responsive-carousel"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
+import Carousel from "react-bootstrap/Carousel"
 
 import { Button, IconButton } from "@mui/material"
 import LoyaltyIcon from "@mui/icons-material/Loyalty"
@@ -26,23 +25,23 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<header className={styles.header}>
-					<Carousel className={styles.carroucel} showThumbs={false}>
-						<div>
+					<Carousel
+						nextLabel={false}
+						prevLabel={false}
+						interval={5000000}
+						className={styles.carroucel}>
+						<Carousel.Item>
 							<img src="/card_pen.jpg" alt="Card com balas e lápis" />
-							<p className="legend">Card com balas e lápis</p>
-						</div>
-						<div>
+						</Carousel.Item>
+						<Carousel.Item>
 							<img src="/calendar.jpg" alt="Calendário de geladeira" />
-							<p className="legend">Calendários de geladeira</p>
-						</div>
-						<div>
+						</Carousel.Item>
+						<Carousel.Item>
 							<img src="/card_candy.jpg" alt="Card com balas" />
-							<p className="legend">Card com balas simples</p>
-						</div>
-						<div>
+						</Carousel.Item>
+						<Carousel.Item>
 							<img src="/mug.jpg" alt="Caneca personalizadas" />
-							<p className="legend">Canecas personalizadas</p>
-						</div>
+						</Carousel.Item>
 					</Carousel>
 					<h1>Presentes, brindes e mimos com personalidade</h1>
 					<section className={styles.store}>
@@ -72,7 +71,6 @@ export default function Home() {
 						</div>
 					</section>
 				</header>
-
 				<section className={styles.features}>
 					<div className={styles.feature}>
 						<h3>
@@ -112,7 +110,7 @@ export default function Home() {
 						<span>
 							Fidelizar funcionários aumenta a satisfação, motivação e lealdade
 							deles, o que resulta em melhor desempenho, menos rotatividade e
-							menores custos de recrutamento e treinamento e brindes com a cara
+							menores custos de recrutamento e treinamento. e brindes com a cara
 							da sua empresa podem ser muito bem associados.
 						</span>
 					</div>

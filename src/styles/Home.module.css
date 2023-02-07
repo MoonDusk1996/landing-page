@@ -17,10 +17,12 @@
 		"footer";
 	gap: 25px;
 	width: 95%;
+
 	margin: 0 auto;
 }
 .carroucel {
 	margin: 0 auto;
+	margin-top: 10px;
 }
 .header h1 {
 	grid-area: header;
@@ -61,28 +63,28 @@
 
 @media (min-width: 600px) {
 	.main {
-		max-width: 1000px;
 		gap: 50px;
+		margin-top: 100px;
 	}
 	.header {
-		margin-top: 100px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas: "carroucel title" "carroucel store";
 		align-items: end;
-		gap: 25px;
+		margin: 0 auto;
+		max-width: 1000px;
+		gap: 50px;
 	}
 	.carroucel {
 		grid-area: carroucel;
 	}
 	.header h1 {
 		grid-area: title;
-		height: 75px;
+	}
+	.features {
 	}
 	.feature {
-		margin: 0 auto;
-		padding: 25px;
-		width: 75%;
+		padding: 20px;
 		font-size: large;
 	}
 	.footer {

@@ -24,7 +24,10 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeProvider theme={theme}>
 			<Box
+				margin={0}
+				padding={0}
 				height={"100%"}
+				width={"100%"}
 				bgcolor={theme.palette.background.default}
 				color={theme.palette.primary.contrastText}>
 				<Component {...pageProps} />
