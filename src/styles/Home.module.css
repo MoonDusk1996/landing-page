@@ -37,9 +37,11 @@
 	grid-area: features;
 	background-color: #f8dfdf;
 	text-align: justify;
-	padding: 10px;
 	margin: 0 auto;
 	border-radius: 5px;
+}
+.feature {
+	padding: 20px;
 }
 .features h3 {
 	color: #e88f9e;
@@ -84,6 +86,7 @@
 	.feature {
 		padding: 20px;
 		font-size: large;
+		max-width: 1000px;
 	}
 	.footer {
 		gap: 0px;
