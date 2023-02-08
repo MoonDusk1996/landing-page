@@ -10,6 +10,7 @@ import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism"
 import FavoriteIcon from "@mui/icons-material/Favorite"
 import FacebookIcon from "@mui/icons-material/Facebook"
 import InstagramIcon from "@mui/icons-material/Instagram"
+import WhatsAppIcon from "@mui/icons-material/WhatsApp"
 
 export default function Home() {
 	return (
@@ -118,13 +119,13 @@ export default function Home() {
 
 				<section className={styles.pages}>
 					<div>
-						<h2>Siga nossas páginas</h2>
+						<h2>Nossas redes sociais</h2>
 					</div>
 					<IconButton
 						sx={{ marginBottom: "20px", marginInline: "5px" }}
-						href="https://web.facebook.com/profile.php?id=100089373436308"
+						href="https://wa.me/message/V623RY5K4SCIM1"
 						size="small">
-						<FacebookIcon
+						<WhatsAppIcon
 							sx={{
 								color: "#e88f9e",
 								fontSize: "50px",
