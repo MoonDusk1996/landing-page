@@ -8,7 +8,6 @@ import { Button, IconButton } from "@mui/material"
 import LoyaltyIcon from "@mui/icons-material/Loyalty"
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism"
 import FavoriteIcon from "@mui/icons-material/Favorite"
-import FacebookIcon from "@mui/icons-material/Facebook"
 import InstagramIcon from "@mui/icons-material/Instagram"
 import WhatsAppIcon from "@mui/icons-material/WhatsApp"
 
@@ -29,7 +28,7 @@ export default function Home() {
 					<Carousel
 						nextLabel={false}
 						prevLabel={false}
-						interval={5000000}
+						interval={3000}
 						className={styles.carroucel}>
 						<Carousel.Item>
 							<img src="/card_pen.jpg" alt="Card com balas e lápis" />
