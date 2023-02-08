@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/MoonDusk1996/landing-page-ana-papel/blob/main/public/favicon.jpg" alt="Ana papel - Brindes personalizados" width="200"/>
+<img src="https://github.com/MoonDusk1996/landing-page-ana-papel/blob/main/public/favicon.jpg" alt="Ana papel - Brindes personalizados" width="100"/>
 
 # Ana papel brindes personalizados - Landing page
 
